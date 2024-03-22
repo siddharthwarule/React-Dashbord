@@ -1,0 +1,42 @@
+.list:hover{
+
+    color: blue !important ;
+}
+
+.list{
+    display: flex;
+    padding: 3px;
+    
+}
+
+.list-text{
+
+    color: black;
+}
+
+.list-head{
+    display: flex;
+    margin-left: 25px;
+
+}
+.head-icon{
+    margin-top: 8px;
+    margin-left: 6px;
+    
+}
+
+.sidebar{
+
+    
+
+}
+
+.MuiPaper-root{
+    margin: 5px;
+    border-top-left-radius:41px ;   
+    border-bottom-left-radius:41px ;   
+   
+    background-color: #F4F5F8 !important;
+
+  
+}

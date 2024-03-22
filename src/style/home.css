@@ -1,0 +1,140 @@
+.cards-container {
+    display: flex;
+position: absolute;
+    
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+  .cards {
+    width: 200px;
+    padding-left: 25px;
+    /* padding-right:25px; */
+  height: 90px;
+    margin-left: 10px;
+    border: 1px solid #ede5e5;
+    border-radius: 18px;
+    /* text-align: center; */
+  }
+ 
+
+  .cards p {
+    font-size:13px;
+    font-weight:600;
+    color: gray;
+  }
+
+  .price{
+  
+    font-weight:600;
+    font-size: large;
+  }
+
+  .home-main{
+    background-color: #ffff;
+    border-radius: 40px;
+    padding: 10px;
+    height: 100vh;
+    width: 110vh;
+   position: relative; 
+  }
+
+  .heading{
+
+    margin-right: 35px;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+
+  }
+
+  .head-top{
+    display: flex;
+    justify-content:space-around;
+}
+
+.dropdown{
+  margin-top: 30px;
+}
+
+.dropdown-btn {
+  /* background-color:gray; */
+  /* padding: 5px; */
+  font-size: 12px;
+  /* margin-bottom: 2px; */
+  font-weight:700;
+  color: black;
+  /* border: none; */
+  cursor: pointer;
+  border-radius: 50px;
+  margin: 5px;
+  border-radius: 2px solid black !important;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Style the options inside the dropdown */
+.dropdown-content option {
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.graph{
+
+  margin-top: 100px;
+
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.prgressbar{
+
+  margin-left: 130px;
+  padding-bottom:35px;
+
+}
+
+.home-section-second{
+  border-radius: 45px;
+  background-color: #fff;
+
+}
+
+.prgressbar p {
+  margin-left: -90px;
+   font-weight: 700;
+   color: gray;
+  font-size: 13px;
+}
+
+.home-section-third{
+
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 45px;
+  margin-top: 6px;
+
+
+}
+
+.home-section-fourth{
+  padding-left: 30px;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 45px;
+  margin-top: 6px;
+
+}

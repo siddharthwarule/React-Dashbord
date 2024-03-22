@@ -1,0 +1,15 @@
+.progress-count{
+    margin-top: 78px;
+    font-size: 13px;
+    margin-left: 40px;
+    font-weight: 700;
+}
+
+.progress-count-from{
+ 
+    /* margin-top: 88px; */
+    font-size: 9px;
+    margin-left: 20px;
+    color: gray;
+    font-weight: 700;
+}

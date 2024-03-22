@@ -1,0 +1,44 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td {
+    /* border: 1px solid black; */
+    padding: 1px;
+    text-align: left;
+    font-size: 12px;
+     font-weight: 700;
+    color: gray;
+
+     
+  }
+
+  .name{
+    color: black;
+    font-weight: 700;
+
+  }
+
+  .reting{
+    color: black;
+    font-weight: 700;
+     
+  }
+
+  th {
+    /* background-color: #f2f2f2; */
+    color: gray;
+    text-align: left;
+    font-size: 12px;
+  }
+  img {
+    /* max-width: 50px; */
+    /* max-height: 50px; */
+  }
+
+  .star-icon svg{
+    height: 13px !important;
+    color:rgb(255, 166, 0);
+  }
+
