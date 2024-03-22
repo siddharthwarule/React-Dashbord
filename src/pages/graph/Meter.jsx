@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState ,useEffect } from 'react';
 import CircularProgress from '@mui/material/CircularProgress';
 import { makeStyles } from '@mui/styles';
 import './meter.css'
+
 
 const useStyles = makeStyles({
   root: {
@@ -18,8 +19,44 @@ const useStyles = makeStyles({
 });
 
 const ProgressComponent = () => {
-  const [progress, setProgress] = useState(40); // Initial progress value
+ 
   const classes = useStyles();
+
+
+  const [score, setScore] = useState(0);
+ 
+ 
+
+  const [progress, setProgress] = useState(0); // Initial progress value
+
+
+  useEffect(() => {
+
+    const fetchData = async () => {
+      try {
+        const response = await fetch('http://3.227.101.169:8020/api/v1/sample_assignment_api_3/', {
+          headers: {
+            'Authorization': 'Basic ' + btoa('trial:assignment123')
+          }
+        });
+        if (!response.ok) {
+          throw new Error('Failed to fetch data');
+        }
+        const responseData = await response.json();
+        setProgress(responseData.score/2);
+       
+        setScore(responseData.score);
+       
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      } finally {
+     
+      }
+    };
+
+    fetchData();
+  }, []); // Empty dependency array ensures this effect runs only once after initial render
+
 
   return (
     <div className={classes.root}>
@@ -31,7 +68,7 @@ const ProgressComponent = () => {
         className={classes.progress}
         style={{ color: 'blue', transform: 'rotate(180deg)' }} // Rotate the progress bar 90 degrees clockwise
       />
-      <div class="progress-count" >78</div>
+      <div class="progress-count" >{score}</div>
       <div class="progress-count-from" >of 100 points</div>
     </div>
   );
